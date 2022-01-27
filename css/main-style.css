@@ -259,7 +259,7 @@ header{
   background-color: #fff9f5;
 }
 .logo img{
-  width: auto;
+  width: auto!important;
 }
 
 
