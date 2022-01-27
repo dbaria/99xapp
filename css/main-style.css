@@ -258,6 +258,9 @@ button.btn-waitlist:active:focus{
 header{
   background-color: #fff9f5;
 }
+.logo img{
+  width: auto;
+}
 
 
 /*footer*/
