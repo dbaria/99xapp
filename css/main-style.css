@@ -30,7 +30,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-     -webkit-box-shadow: 0 0 0 18px white inset !important; 
+     -webkit-box-shadow: 0 0 0 18px white inset !important;
      -webkit-text-fill-color: #333!important;
 }
 
@@ -94,7 +94,8 @@ button.btn-waitlist:active:focus{
   border: none;
   font-family: 'sofiapro';
   font-size: 20px;
-  letter-spacing: -0.36px;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin: 0px auto;
   display: block;
   outline: 0;
@@ -110,7 +111,7 @@ button.btn-waitlist:active:focus{
 .card {
   display: flex;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 .cards .card:nth-child(odd) .card__text,.cards .card:nth-child(even) .card-text{
   display: flex;
@@ -220,7 +221,7 @@ button.btn-waitlist:active:focus{
   line-height: 1.4;
   letter-spacing: 0.2px;
   padding: 0;
-  margin: 24px 0 48px
+  margin: 24px 0 32px
 }
 /*header*/
 .navbar {
@@ -229,10 +230,12 @@ button.btn-waitlist:active:focus{
   padding:0 70px;
 }
 .navbar-brand {
-  padding: 30px 0;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .navbar-nav>li>a, .country-selected {
-    padding: 30px 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
     color: #1A1A1A;
     margin: 0 25px;
     font-family: 'sofiapro';
@@ -290,6 +293,16 @@ footer .social-media ul li,.footer-links ul{
   color: #e5ece9;
   font-weight: 400;
 }
+
+.footer-description ul{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-description ul li{
+  margin-bottom: 15px;
+}
+
 .copyrights{
   border-top: 1px solid #fff;
   opacity: 0.8;
@@ -341,8 +354,8 @@ footer .social-media ul li,.footer-links ul{
 .semi-footer button:active:focus{
   box-shadow: 6px 14px 27px 0 rgb(20 29 31 / 29%);
   font-size: 24px;
-  letter-spacing: -0.36px;
-  max-width: 272px;
+  letter-spacing: 1px;
+  max-width: 300px;
   width: 100%;
   margin: 50px auto 80px;
   font-family: P22MackinacPro;
@@ -390,7 +403,7 @@ footer .social-media ul li,.footer-links ul{
 /*section 4*/
 .more-power-to-girls{
   background-color: #ec5858;
-  padding-top: 48px;
+  padding-top: 60px;
 }
 .more-more-to-girl-text h3,.more-more-to-girl-text p{
   color: #fffdf1;
@@ -466,7 +479,7 @@ footer .social-media ul li,.footer-links ul{
   line-height: normal;
   letter-spacing: -0.6px;
   color: #000;
-  margin: 16px 0 32px;
+  margin: 24px 0 48px;
 }
 .curated-masterclasses .masterclas-info {
   position: absolute;
@@ -499,7 +512,7 @@ footer .social-media ul li,.footer-links ul{
 /*section 5*/
 /*section 7*/
 .join-community{
-  padding: 65px 0;
+  padding: 60px 0;
 }
 .join-community h3{
   line-height: normal;
@@ -517,32 +530,33 @@ footer .social-media ul li,.footer-links ul{
 }
 .community-section-number .community-number h1{
   line-height: normal;
-  letter-spacing: -3.52px;
+  letter-spacing: 1px;
   text-align: center;
   color: #ec5858;
+  font-weight: bold;
 }
 .community-section-number .community-number p{
   font-family: 'sofiapro';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
   text-align: center;
   color: #020f0f;
 }
 .community-number{
   position: relative;
-  padding: 0 75px;
+  padding: 0 73px;
 }
 .community-number:last-child:after{
   display: none;
 }
 .community-number:after {
   content: "";
-  border: 1px solid #020f0f;
+  border: 0.1px solid #020f0f;
   position: absolute;
   top: -10px;
   right: 0;
-  height: 115%;
+  height: 130%;
 }
 
 /*section 7*/
@@ -591,6 +605,7 @@ footer .social-media ul li,.footer-links ul{
 .cards .card:nth-child(even) .card__text .card-title {
   width: 100%;
   margin: 10px 0 20px;
+  text-align: center;
 }
 .card{
   flex-direction: column-reverse;
@@ -609,7 +624,21 @@ footer {
 .footer-description ul li.email a{
   font-size: 16px;
 }
+.who-we-are h3,.more-more-to-girl-text h3,.join-community h3 {
+  font-size: 36px;
 }
+.who-we-are p,.more-more-to-girl-text p,.curated-masterclasses p,.card__text .card-title p{
+  font-size: 14px;
+}
+.curated-masterclasses h4,.card__text .card-title h5 {
+  font-size: 32px;
+}
+.semi-footer h1 {
+  font-size: 48px;
+}
+}
+
+
 @media only screen  and (max-width : 896px) and (orientation : landscape) {
 .navbar-nav>li>a,.navbar-nav>li:last-child a{
   font-size: 12px;
@@ -627,8 +656,10 @@ footer {
 .navbar {
   padding: 0 20px;
 }
-.navbar-nav>li>a,.navbar-nav>li:last-child a{
-  font-size: 12px;
+.navbar-nav>li>a, .navbar-nav>li:last-child a {
+    font-size: 11px;
+    margin: 0 5px;
+    padding: 40px 0 50px;
 }
 .navbar-nav>li:last-child {
   right: 0px;
@@ -636,6 +667,22 @@ footer {
 .navbar-nav>li:last-child,.main-banner-text{
   position: unset;
   transform: none;
+}
+.navbar-toggle{
+  margin-top: 30px;
+}
+.main-banner-text h2 {
+  font-size: 46px;
+  line-height: normal;
+}
+.main-banner-text h5 {
+  font-size: 16px;
+}
+button.btn-waitlist, button.btn-waitlist:hover, button.btn-waitlist:focus,
+button.btn-waitlist:active, button.btn-waitlist:active:focus{
+  max-width: 100%;
+  width: 100%;
+  font-size: 18px;
 }
 }
 
@@ -661,10 +708,20 @@ footer {
   display: none;
 }
 .community-number,.footer-description{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.who-we-are-main{
-  flex-direction: column-reverse;
+.community-number {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.community-section-number .community-number:last-child{
+  border-bottom:none;
+}
+.who-we-are-main {
+  flex-direction: column;
+  text-align: center;
 }
 .who-we-are-text{
   max-width: 100%;
@@ -676,7 +733,21 @@ footer {
 .navbar-nav>li>a, .navbar-nav>li:last-child a{
   padding: 10px 0;
 }
-
+.main-banner{
+  min-height: 650px;
+}
+.footer-links ul li {
+  margin: 10px 30px 0 0;
+}
+.community-section-number .community-number h1{
+  font-size: 42px;
+}
+.semi-footer h1 {
+  font-size: 42px;
+}
+.main-banner-text h2{
+  font-size: 42px;
+}
 }
 
 /*480*/
