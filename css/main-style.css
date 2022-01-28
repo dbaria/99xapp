@@ -140,8 +140,9 @@ button.btn-waitlist:active:focus{
   max-width: 495px;
 }
 */
-.card-image img{
-  margin: 0 auto;
+.card-image img {
+    margin: 0 auto;
+    width: 570px;
 }
 .card-img-text{
   background-color: #fff;
@@ -230,21 +231,23 @@ button.btn-waitlist:active:focus{
   padding:0 70px;
 }
 .navbar-brand {
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 33px;
+  padding-bottom: 0;
+  height: 30px;
 }
-.navbar-nav>li>a, .country-selected {
-    padding-top: 40px;
-    padding-bottom: 50px;
-    color: #1A1A1A;
-    margin: 0 25px;
-    font-family: 'sofiapro';
-    font-size: 14px;
-    font-weight: 600;
+.navbar-nav>li>a {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 0;
+  color: #1A1A1A;
+  margin: 0px 20px;
+  font-family: 'sofiapro';
+  font-size: 14px;
+  font-weight: 600;
 }
 .navbar-nav>li:last-child{
   position: absolute;
-  right: -35px;
+  right: 0px;
 }
 .navbar-nav>li:last-child a{
   font-family: P22MackinacPro;
@@ -260,6 +263,12 @@ header{
 }
 .logo img{
   width: auto!important;
+}
+.modal-dialog{
+  width: 1200px;
+}
+.modal-header .close {
+    font-size: 50px;
 }
 
 
@@ -424,8 +433,8 @@ footer .social-media ul li,.footer-links ul{
 .more-more-to-girl-text .power-text p:first-child{
   margin-bottom: 25px;
 }
-.who-we-are{
-    padding: 21px 0 0;
+.who-we-are {
+    padding: 84px 0 0;
 }
 .who-we-are h3{
   margin: 0 0 24px 0;
@@ -571,6 +580,9 @@ footer .social-media ul li,.footer-links ul{
   bottom: -55px;
   left: 0;
 }
+.navbar-nav>li:last-child {
+   right: 15px;
+}
 }
 
 /*1024*/
@@ -660,7 +672,7 @@ footer {
   padding: 0 20px;
 }
 .navbar-nav>li>a, .navbar-nav>li:last-child a {
-    font-size: 11px;
+    font-size: 10px;
     margin: 0 5px;
     padding: 40px 0 50px;
 }
@@ -686,6 +698,10 @@ button.btn-waitlist:active, button.btn-waitlist:active:focus{
   max-width: 100%;
   width: 100%;
   font-size: 18px;
+}
+.navbar-brand {
+  max-width: 100px;
+  padding-top: 40px;
 }
 }
 
@@ -717,7 +733,7 @@ button.btn-waitlist:active, button.btn-waitlist:active:focus{
   margin-bottom: 20px;
   border-bottom: 1px solid #000;
   padding-bottom: 20px;
-  width: 100%;
+  /*width: 100%;*/
 }
 .community-section-number .community-number:last-child{
   border-bottom:none;
@@ -725,6 +741,9 @@ button.btn-waitlist:active, button.btn-waitlist:active:focus{
 .who-we-are-main {
   flex-direction: column;
   text-align: center;
+}
+.who-we-are {
+  padding: 44px 0 0;
 }
 .who-we-are-text{
   max-width: 100%;
@@ -761,3 +780,234 @@ button.btn-waitlist:active, button.btn-waitlist:active:focus{
 }
 
 /*320*/
+
+
+/*account activation css start*/
+.account-activation-main {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+}
+
+.account-activation-main .left-area {
+width: 50%;
+}
+
+.account-activation-main .left-area,.account-activation-main .right-area {
+max-width: 50%;
+width: 100%;
+}
+.login-form-new,.reset-password{
+padding: 72px 82px;
+}
+
+.login-form-new input,.reset-password input{
+border: 1px solid #84a6ae;
+box-shadow: none;
+background: transparent;
+color: #333;
+border-radius: 0;
+}
+
+.log-in-btn,.submit-btn, .reset-btn,.submit-btn:hover,.submit-btn:focus,.submit-btn:active:focus{
+display: block;
+border-radius: 4px;
+background-color: rgba(81, 116, 124, 0.97);
+margin: 48px auto 60px;
+width: 100%;
+padding: 15px 40px;
+border: none;
+outline: 0;
+font-family: 'sofiapro';
+font-size: 20px;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.5px;
+}
+
+.footer-login .terms-conditions span {
+display: inline-block;
+margin: 0 5px;
+}
+
+.login-form-new a,.footer-login .terms-conditions span a,.footer-login .terms-conditions span{
+color: #333;
+font-size: 14px;
+
+}
+.login-form-new label {
+max-width: 100%;
+margin-bottom: 0;
+font-family: sofiapro;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: -0.4px;
+color: #626262;
+margin-bottom: 5px;
+}
+
+.login-form-new .form-group,.reset-password .form-group{
+margin-top: 15px;
+}
+
+.login-form-new a.enroll-now{
+font-size: 15px;
+}
+.login-form-new h3{
+font-size: 48px;
+font-weight: bold;
+line-height: 1;
+letter-spacing: -1.48px;
+}
+
+.login-form-new p{
+font-family: sofiapro;
+font-size: 16px;
+line-height: 1.4;
+letter-spacing: -0.22px;
+color: #2f2f2f;
+margin: 24px 0;
+}
+.footer-note p{
+font-size: 14px;
+line-height: 1.4;
+letter-spacing: normal;
+color: #2f2f2f;
+max-width: 450px;
+width: 100%;
+}
+.waitlist-mentor .submit-btn{
+margin: 48px auto;
+background: #ec5858;
+}
+.waitlist-mentor .login-form-new {
+padding: 72px 82px 0;
+}
+.waitlist-mentor .login-form-new h3{
+color: rgba(47, 47, 47, 0.97);
+}
+.waitlist-mentor .login-form-new p{
+max-width: 370px;
+width: 100%;
+}
+.waitlist-mentor .login-form-new .form-group {
+margin-top: 15px;
+}
+.waitlist-mentor .login-form-new .form-group textarea{
+resize: none;
+border: solid 1px #84a6ae;
+}
+.waitlist-mentor .login-form-new .footer-note p {
+max-width: 450px;
+width: 100%;
+}
+.login-form-new .footer-note a{
+text-decoration:underline;
+}
+
+@media (max-width: 1024px){
+/*account acctivation*/
+.login-form-new, .reset-password{
+padding: 50px 20px;
+}
+.login-form-new .form-group, .reset-password .form-group {
+margin-top: 34px;
+}
+.submit-btn{
+margin-bottom: 20px;
+}
+.account-activation-main.waitlist-mentor .left-area img{
+height: 100vh;
+}
+.account-activation-main.waitlist-mentor .login-form-new {
+padding: 50px 20px 0;
+}
+}
+@media (max-width: 991px){
+/*waitlist user css starts*/
+.account-activation-main .left-area{
+max-width: 0;
+width: 100%;
+display: none;
+}
+.account-activation-main .right-area{
+max-width: 100%;
+width: 100%;
+background: url(images/woman-future.png) no-repeat;
+background-size: 100% 100%;
+height: 100vh;
+padding: 100px 20px 0;
+}
+.account-activation-main.waitlist-mentor .right-area {
+background: url(images/empowered-woman.png) no-repeat;
+background-size: 100% 100%;
+height: 100%;
+}
+.right-area h1,.right-area label,.login-form-new a,.login-form-new p{
+font-size: 14px;
+}
+.account-activation-main .right-area h1{
+font-size: 16px!important;
+}
+.account-activation-main .login-form-new{
+background: #fff;
+padding: 30px;
+margin-top: 50px;
+}
+.account-activation-main .log-in-btn,.registered-email-id .submit-btn,.reset-link .reset-btn {
+margin: 30px auto 15px;
+}
+.login-form-new h3 {
+font-size: 30px;
+}
+.login-form-new .form-group, .reset-password .form-group {
+margin-top: 20px;
+}
+
+/*waitlist user css starts*/
+}
+@media (max-width: 768px){
+.account-activation-main .login-form-new{
+margin-top: 150px;
+}
+.account-activation-main.waitlist-mentor .right-area {
+height: 100vh;
+}
+}
+@media (max-width: 767px){
+.account-activation-main .login-form-new {
+margin-top: 50px;
+}
+.account-activation-main.waitlist-mentor .right-area {
+height: 100%;
+}
+.modal-dialog{
+  width: auto;
+}
+.account-activation-main.waitlist-mentor .login-form-new {
+    padding-top: 0;
+}
+.login-form-new h3 {
+    font-size: 29px;
+}
+}
+@media (max-width: 480px){
+.account-activation-main .login-form-new {
+margin-top: 0px;
+}
+}
+/*320*/
+@media (max-width: 360px){
+.account-activation-main .right-area {
+padding: 50px 20px 0;
+}
+}
+/*320*/
+@media (max-width: 320px){
+.account-activation-main .right-area {
+padding: 10px 20px 0;
+}
+}
+/*account activation css end*/
